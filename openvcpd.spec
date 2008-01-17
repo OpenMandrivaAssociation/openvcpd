@@ -3,7 +3,7 @@
 Summary:	Daemon utility to control vserver
 Name:		openvcpd
 Version:	0.3
-Release:	%mkrel 0.%{rls}.2
+Release:	%mkrel 0.%{rls}.3
 License:	GPLv2+
 Group:		Monitoring
 URL:		http://openvcp.org/
