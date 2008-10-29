@@ -3,7 +3,7 @@
 Summary:	Daemon utility to control vserver
 Name:		openvcpd
 Version:	0.3
-Release:	%mkrel 0.%{rls}.3
+Release:	%mkrel 0.%{rls}.4
 License:	GPLv2+
 Group:		Monitoring
 URL:		http://openvcp.org/
@@ -23,7 +23,7 @@ BuildRequires:	gnutls-devel
 Requires:	util-vserver 
 Requires:	iptables >= 1.3.8-1
 Requires(pre): rpm-helper
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 OpenVCP is developed for use with Linux in combination with Linux-Vserver.
