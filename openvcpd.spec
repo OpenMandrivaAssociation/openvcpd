@@ -14,6 +14,7 @@ Source3:	%{name}.conf
 Source4:	%{name}-README.urpmi
 Patch0:		openvcpd-DESTDIR.diff
 BuildRequires:	iptables-devel >= 1.3.8-1
+BuildRequires:	iptables-iptc-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	pcap-devel
 BuildRequires:	sqlite3-devel
