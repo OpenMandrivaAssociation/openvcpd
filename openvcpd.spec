@@ -2,17 +2,17 @@
 
 Summary:	Daemon utility to control vserver
 Name:		openvcpd
-Version:	0.3
-Release:	%mkrel 0.%{rls}.5
+Version:	0.5
+Release:	%mkrel 0.%{rls}.1
 License:	GPLv2+
 Group:		Monitoring
 URL:		http://openvcp.org/
-Source0:	http://openvcp.org/%{name}-%{version}.tar.gz
+Source0:	http://files.openvcp.org/%{name}-%{version}%{rls}.tar.gz
 Source1:	%{name}.default
 Source2:	%{name}.init
 Source3:	%{name}.conf
 Source4:	%{name}-README.urpmi
-Patch0:		openvcpd-DESTDIR.diff
+Patch1:		openvcpd-0.5-rc2-link.patch
 BuildRequires:	iptables-devel >= 1.3.8-1
 BuildRequires:	iptables-iptc-devel
 BuildRequires:	libxml2-devel
@@ -32,9 +32,8 @@ It provides a web-based interface to manage a whole farm of VServer hosts,
 build guests, control the guests, account traffic and much more.
 
 %prep
-
-%setup -q -n %{name}-%{version}-%{rls}
-%patch0 -p0 -b .DESTDIR
+%setup -q -n %{name}-%{version}%{rls}
+%patch1 -p0
 
 cp %{SOURCE1} %{name}.default
 cp %{SOURCE2} %{name}.init
@@ -95,9 +94,8 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 %config(noreplace) %{_sysconfdir}/logrotate.d/%{name}
 %{_sysconfdir}/default/%{name}
-%{_sysconfdir}/%{name}.conf
-%{_bindir}/%{name}
-%{_bindir}/parse_ipfmlogs
+%{_bindir}/*
+%{_datadir}/openvcpd
 %dir /vservers/backups
 %dir /vservers/images
 %dir /var/run/%{name}
