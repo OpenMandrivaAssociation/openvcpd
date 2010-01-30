@@ -3,7 +3,7 @@
 Summary:	Daemon utility to control vserver
 Name:		openvcpd
 Version:	0.5
-Release:	%mkrel 0.%{rls}.1
+Release:	%mkrel 0.%{rls}.2
 License:	GPLv2+
 Group:		Monitoring
 URL:		http://openvcp.org/
@@ -22,7 +22,8 @@ BuildRequires:	sqlite3-devel
 BuildRequires:	util-vserver
 BuildRequires:	util-vserver-devel
 BuildRequires:	gnutls-devel
-BuildRequires:	rsync libtool
+BuildRequires:	rsync
+BuildRequires:	libtool
 Requires:	util-vserver 
 Requires:	iptables >= 1.3.8-1
 Requires(pre): rpm-helper
