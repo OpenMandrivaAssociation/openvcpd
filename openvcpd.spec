@@ -16,6 +16,7 @@ Patch1:		openvcpd-0.5-rc2-link.patch
 BuildRequires:	iptables-devel >= 1.3.8-1
 BuildRequires:	iptables-iptc-devel
 BuildRequires:	libxml2-devel
+BuildRequires:	python-devel
 BuildRequires:	pcap-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:	util-vserver
