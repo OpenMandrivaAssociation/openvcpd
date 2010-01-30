@@ -22,6 +22,7 @@ BuildRequires:	sqlite3-devel
 BuildRequires:	util-vserver
 BuildRequires:	util-vserver-devel
 BuildRequires:	gnutls-devel
+BuildRequires:	rsync libtool
 Requires:	util-vserver 
 Requires:	iptables >= 1.3.8-1
 Requires(pre): rpm-helper
