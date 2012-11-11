@@ -1,0 +1,6 @@
+sources:
+  "openvcpd-0.5rc2.tar.gz:"	6ff1aa73009c2b3c2b824c56b3cfb8048fc325ad
+  "openvcpd.conf:"	bea42118de2585171de83b83f5c2ff3c8e4f13b7
+  "openvcpd.default:"	a9bdf40520807cc404cf6e958b49c8ad23fe0693
+  "openvcpd.init:"	b4307186a938fd458221c8643fa667359edea2a8
+  "openvcpd-README.urpmi:"	d020e63598b5a4d57948533440046f03f156c2cf

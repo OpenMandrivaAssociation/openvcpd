@@ -1,0 +1,11 @@
+--- Makefile.in.link	2010-01-30 08:10:42.000000000 +0100
++++ Makefile.in	2010-01-30 08:11:05.000000000 +0100
+@@ -13,7 +13,7 @@
+ 
+ all: openvcpd lib/pyovcp/ovcp.so
+ openvcpd: src/main.c $(OBJECTS) lib/pyovcp/pyovcp.a
+-	$(CC) $(CFLAGS) -o openvcpd src/main.c $(OBJECTS) $(LIBS) lib/pyovcp/pyovcp.a
++	$(CC) $(LDFLAGS) $(CFLAGS) -o openvcpd src/main.c $(OBJECTS) $(LIBS) lib/pyovcp/pyovcp.a
+ 
+ src/modules.o: src/modules.c
+ src/parseconfig.o: src/parseconfig.c
