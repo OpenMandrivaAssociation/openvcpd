@@ -6,7 +6,7 @@ Version:	0.5
 Release:	%mkrel 0.%{rls}.2
 License:	GPLv2+
 Group:		Monitoring
-URL:		http://openvcp.org/
+URL:		https://openvcp.org/
 Source0:	http://files.openvcp.org/%{name}-%{version}%{rls}.tar.gz
 Source1:	%{name}.default
 Source2:	%{name}.init
