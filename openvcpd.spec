@@ -13,6 +13,11 @@ Source2:	%{name}.init
 Source3:	%{name}.conf
 Source4:	%{name}-README.urpmi
 Patch1:		openvcpd-0.5-rc2-link.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	iptables-devel >= 1.3.8-1
 BuildRequires:	iptables-iptc-devel
 BuildRequires:	libxml2-devel
